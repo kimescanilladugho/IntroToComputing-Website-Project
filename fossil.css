@@ -1,0 +1,295 @@
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Img/nice.jpg);
+    font-family: montserrat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+    label.logo{
+      max-width: 1000px;
+      position: fixed;
+      left: 100px;
+    }
+    .logo2{
+      width: 90px;
+      margin: 4px;
+    }
+    nav{
+      position:fixed;
+      background-color: black;
+      height: 75px;
+      width: 100%;
+    }
+    nav ul{
+      position: fixed;
+      right: 1%;
+      top: 0px;
+      margin-right: 7px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+  }
+  
+  
+  a:hover{
+    background: #42D01C;
+      color: #D02626;
+    
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  h3{
+    text-align: center;
+  color: #ffff;
+  font-size: 35px;
+  margin-top: 3%;
+  font-size: 35px;
+  }
+  p{
+    margin: 2% 10% 2% 10%;
+    color: #ffff;
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .fos-1{
+   padding-top: 9%;
+   margin: 0 0 0 30%;
+    width:40%;
+  }
+  .fos-2{
+    margin: 0 0 0 30%;
+    width:40%;
+   }
+   .fos-3{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }.fos-4{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }.fos-5{
+    margin: 0 0 0 45%;
+    width:15%;
+ 
+   }.fos-6{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }.fos-7{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }.fos-8{
+    margin: 0 0 0 30%;
+    width:40%;
+   }.fos-9{
+    margin: 0 0 0 30%;
+    width:40%;
+   }.fos-10{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }
+   .fos-11{
+    margin: 0 0 0 30%;
+    width:40%;
+ 
+   }
+   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your styles for tablets go here */
+    label.logo{
+  
+      display: none;
+    }
+    nav{
+      position:fixed;
+      background-color: black;
+      height: 75px;
+      width: 100%;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+   
+    nav ul{
+    margin-right: 10%;
+    top: 0;
+    }
+      .fos-1{
+       width: 65%;
+       margin: 15% 5% 0 10%;
+     }
+     .fos-2{
+      width: 65%;
+       margin: 5% 10% 0 20%;
+      }
+      .fos-3{
+        width: 65%;
+       margin: 5% 5% 0 15%;
+      }
+      .fos-4{
+        width: 65%;
+       margin: 5% 10% 0 10%;
+      }
+      .fos-5{
+        width: 35%;
+       margin: 5% 10% 0 35%;
+      }
+      .fos-6{
+        width: 65%;
+        margin: 5% 5% 0 10%;
+      }
+      .fos-7{
+        width: 65%;
+       margin: 15% 5% 0 15%;
+      }
+      .fos-8{
+        width: 65%;
+       margin: 15% 5% 0 10%;
+      }
+      .fos-9{
+        width: 65%;
+       margin: 15% 10% 0 15%;
+      }
+      .fos-10{
+        width: 65%;
+       margin: 15% 5% 0 15%;
+      }
+      .fos-11{
+        width: 65%;
+       margin: 15% 5% 0 15%;
+      }
+      h3{
+      font-size: 25px;
+      font-size: 35px;
+      }
+      p{
+        font-size: 40px;
+        line-height: 35px;
+        margin-right: 10%;
+      }
+
+   }
+   @media only screen and (max-width: 767px) {
+    /* Your styles for mobile phones go here */
+    body{
+      background-size: 100% 100%;
+      width: 100%;
+    }
+    .logo{
+      display: none;
+    }
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      overflow: hidden;
+    }
+    nav ul li a{
+      font-size: 20px;
+      
+    }
+    a:hover{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .fos-1{
+      width: 70%;
+      margin: 15% 5% 0 5%;
+    }
+    .fos-2{
+      width: 70%;
+      margin: 15% 10% 0 10%;
+     }
+     .fos-3{
+      width: 80%;
+      margin: 15% 5% 0 5%;
+     }
+     .fos-4{
+      width: 75%;
+      margin: 15% 5% 0 5%;
+     }
+     .fos-5{
+      width: 40%;
+      margin: 15% 10% 0 30%;
+     }
+     .fos-6{
+      width: 70%;
+      margin: 15% 5% 0 10%;
+     }
+     .fos-7{
+      width: 70%;
+      margin: 15% 10% 0 10%;
+     }
+     .fos-8{
+      width: 70%;
+      margin: 15% 10% 0 10%;
+     }
+     .fos-9{
+      width: 70%;
+      margin: 15% 10% 0 10%;
+     }
+     .fos-10{
+      width: 70%;
+      margin: 15% 5% 0 10%;
+     }
+     .fos-11{
+      width: 70%;
+      margin: 15% 10% 0 10%;
+     }
+
+   }

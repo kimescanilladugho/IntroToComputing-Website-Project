@@ -1,0 +1,273 @@
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Img/history.png);
+    font-family: montserrat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    
+  }
+.wrapper-main{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+.logo2{
+  width: 90px;
+  margin: 4px;
+}
+
+label.logo{
+  max-width: 1000px;
+  position: fixed;
+  left: 100px;
+}
+.logo2{
+  width: 90px;
+  margin: 4px;
+}
+nav{
+  position:fixed;
+    background-color: black;
+  height: 75px;
+  width: 100%;
+}
+nav ul{
+  position: fixed;
+  right: 1%;
+  top: 0px;
+  margin-right: 7px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a:hover{
+  background: #42D01C;
+    color: #D02626;
+  
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.h11{
+  padding-top: 15%;
+  font-size: 25px;
+  line-height: 25px;
+  color: white;
+  font-family: Arial;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+h2{
+  font-size: 30px;
+  line-height: 20px;
+  color: white;
+  font-family: Arial;
+}
+
+.paragraph{
+margin: 3% 4%;
+font-size: 25px;
+line-height: 25px;
+color: white;
+font-family: Arial;
+font-weight: 400;
+text-transform:capitalize;
+  width: 99%;
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your styles for tablets go here */
+  label.logo{
+  
+    display: none;
+  }
+  nav{
+    position:fixed;
+    background-color: black;
+    height: 75px;
+    width: 100%;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+ 
+  nav ul{
+  margin-right: 10%;
+  top: 0;
+  }
+  .paragraph{
+    font-size: 23px;
+  }
+  .wrapper-main{
+    margin: 0 15% 0 15%;
+  }
+  .h11{
+    padding-top: 15%;
+     margin-left: 3%;
+      margin-right: 3%;
+  }
+    h2{
+      font-size: 23px;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .wow{
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    label.logo{
+      margin-top: -26%;
+      font-size: 30px;
+      padding-left: 50px;
+      float: left;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    /* Your styles for mobile phones go here */
+    body{
+      background-size: 100% 100%;
+      width: 100%;
+    }
+    .logo{
+      display: none;
+    }
+    .checkbtn{
+      display: block;
+    }
+    .wrapper-main{
+      padding: 10% 0 0 0;
+      width: 80%;
+      margin-left: 10%;
+    
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      overflow: hidden;
+    }
+    nav ul li a{
+      font-size: 20px;
+      
+    }
+    a:hover{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    
+    .logo{
+      display: none;
+    }
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      
+    }
+    nav ul li a{
+      font-size: 20px;
+      
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .wrapper-main{
+      width: 80%;
+    }
+    .h11{
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .paragraph{
+      font-size: 30px;
+      line-height: 30px;
+    }
+  h1{
+      font-size: 30px;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    h2{
+      font-size: 25px;
+      margin: 5% 0 5% 0;
+      line-height: 30px;
+
+    }
+    .wow{
+      font-size: 30px;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }

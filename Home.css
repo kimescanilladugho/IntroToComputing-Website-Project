@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Img/backhome.jpg);
+  font-family: montserrat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+nav{
+  background: none;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  max-width: 1000px;
+  color: #42D01C;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 0 0 0  100px;
+  font-weight: bold;
+}
+.logo2{
+  width: 90px;
+  margin: 4px;
+}
+nav ul{
+  max-width: 960px;
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a:hover{
+  background: #42D01C;
+    color: #D02626;
+  
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.kim2{
+  width: 30%;
+  float:right;
+  margin-top: 2%;
+  margin-right: 10%;
+}
+.kim{
+  width: 50%;
+  float: left;
+  margin-left: 7%;
+  margin-top: 7%;
+  color: #EC7063;
+ font-size: clamp(0.625rem, -38.75rem + 77.7778vw, 5rem);
+  font-family: 'Jurassic Park', sans-serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your styles for tablets go here */
+  label.logo{
+  
+    display: none;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+ 
+  nav ul{
+  margin-right: 10%;
+  top: 0;
+  }
+  .kim{ 
+ font-size: 60px;
+ text-align: center;
+ margin: 0 0 0 25%;
+  }
+   .kim2{
+    width: 30%;
+    margin-right: 35%;
+  
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your styles for mobile phones go here */
+  .logo{
+    display: none;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    overflow: hidden;
+  }
+  nav ul li a{
+    font-size: 20px;
+    
+  }
+  a:hover{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .kim2{
+    width: 30%;
+    margin: 0 35% 0 0 ;
+  }
+  .kim{ 
+    font-size: 60px;
+  text-align: center;
+  margin-left: 25%;
+  }
+}
